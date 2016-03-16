@@ -4,7 +4,7 @@ package org.diego.mocking;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -14,7 +14,7 @@ import org.junit.Test;
 public class AppTest {
 	FakeService service;
 
-	@BeforeClass
+	@Before
 	public void initTestModule() {
 		service = new FakeService();
 	}
